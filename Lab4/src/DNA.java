@@ -9,6 +9,10 @@ Harkness 114
 based on Linked List Implementation from class
 */
 
+<<<<<<< HEAD
+
+=======
+>>>>>>> 8be9b0fc84ceff48b6d9de5f5fea1162f4a33b17
 import java.util.ArrayList;
 
 class DNA {
@@ -27,7 +31,7 @@ class DNA {
             System.out.println("INVALID: This is a DNA sequence containing the base 'U'." +
                     "\n" + sequence + " was not inserted into the sequence array.");
         } else {
-
+            
 
            for(int i=0; i<sequence.length();i++) {
                seq.append(sequence.charAt(i));
@@ -42,6 +46,8 @@ class DNA {
     removes sequence at position and sets type to empty
      */
     public void remove(int position) {
+
+
         
     }
     /*
