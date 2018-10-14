@@ -3,10 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="f3debf2c-317b-4323-91ef-3d918d3a1edb" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Lab4/DNA.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lab4/DNA.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Lab4/DNAList.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lab4/DNAList.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/DNA.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DNA.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/DNAList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DNAList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LList.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -55,12 +55,12 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="6537" />
+          <entry key="java" value="7244" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="6537" />
+          <entry key="JAVA" value="7244" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -80,8 +80,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/DNAList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="18" column="21" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
+            <state relative-caret-position="175">
+              <caret line="20" selection-start-line="20" selection-end-line="20" />
             </state>
           </provider>
         </entry>
@@ -89,16 +89,16 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/DNA.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="156">
-              <caret line="115" column="43" selection-start-line="115" selection-start-column="43" selection-end-line="115" selection-end-column="43" />
+            <state relative-caret-position="363">
+              <caret line="151" column="44" lean-forward="true" selection-start-line="151" selection-start-column="44" selection-end-line="151" selection-end-column="44" />
               <folding>
                 <element signature="e#352#359#0" expanded="true" />
                 <element signature="e#2241#2242#0" expanded="true" />
                 <element signature="e#2278#2279#0" expanded="true" />
                 <element signature="e#2376#2377#0" expanded="true" />
                 <element signature="e#2402#2403#0" expanded="true" />
-                <element signature="e#4191#4192#0" expanded="true" />
-                <element signature="e#4224#4225#0" expanded="true" />
+                <element signature="e#5898#5899#0" expanded="true" />
+                <element signature="e#5931#5932#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -107,7 +107,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/LList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2835">
+            <state relative-caret-position="934">
               <caret line="214" selection-start-line="214" selection-start-column="2" selection-end-line="229" selection-end-column="7" />
               <folding>
                 <element signature="e#1264#1265#0" expanded="true" />
@@ -142,15 +142,15 @@
         <option value="$PROJECT_DIR$/src/LinkedList.java" />
         <option value="$PROJECT_DIR$/src/LLIst.java" />
         <option value="$PROJECT_DIR$/src/Node.java" />
-        <option value="$PROJECT_DIR$/src/DNAList.java" />
         <option value="$PROJECT_DIR$/src/LList.java" />
+        <option value="$PROJECT_DIR$/src/DNAList.java" />
         <option value="$PROJECT_DIR$/src/DNA.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="y" value="22" />
-    <option name="width" value="1191" />
+    <option name="width" value="1011" />
     <option name="height" value="988" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -180,7 +180,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539519892133" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539521756191" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunDashboard">
@@ -223,10 +223,9 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1191" height="988" extended-state="0" />
-    <editor active="true" />
+    <frame x="0" y="22" width="1011" height="988" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16623151" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19711043" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -236,7 +235,7 @@
       <window_info id="Favorites" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32924107" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32924107" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -299,16 +298,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/DNAList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="18" column="21" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/LList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2835">
+        <state relative-caret-position="934">
           <caret line="214" selection-start-line="214" selection-start-column="2" selection-end-line="229" selection-end-column="7" />
           <folding>
             <element signature="e#1264#1265#0" expanded="true" />
@@ -317,18 +309,25 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/DNAList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/DNA.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="115" column="43" selection-start-line="115" selection-start-column="43" selection-end-line="115" selection-end-column="43" />
+        <state relative-caret-position="363">
+          <caret line="151" column="44" lean-forward="true" selection-start-line="151" selection-start-column="44" selection-end-line="151" selection-end-column="44" />
           <folding>
             <element signature="e#352#359#0" expanded="true" />
             <element signature="e#2241#2242#0" expanded="true" />
             <element signature="e#2278#2279#0" expanded="true" />
             <element signature="e#2376#2377#0" expanded="true" />
             <element signature="e#2402#2403#0" expanded="true" />
-            <element signature="e#4191#4192#0" expanded="true" />
-            <element signature="e#4224#4225#0" expanded="true" />
+            <element signature="e#5898#5899#0" expanded="true" />
+            <element signature="e#5931#5932#0" expanded="true" />
           </folding>
         </state>
       </provider>
