@@ -9,8 +9,6 @@ Harkness 114
 based on Linked List Implementation from class
 */
 
-import sun.awt.image.ImageWatched;
-
 import java.util.ArrayList;
 
 class DNA {
@@ -34,9 +32,9 @@ class DNA {
            for(int i=0; i<sequence.length();i++) {
                seq.append(sequence.charAt(i));
            }
-           
 
-           seqs.add
+
+           seqs
         }
     }
 
