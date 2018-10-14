@@ -46,6 +46,8 @@ class DNA {
     removes sequence at position and sets type to empty
      */
     public void remove(int position) {
+
+
         
     }
     /*
