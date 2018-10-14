@@ -9,29 +9,34 @@ Harkness 114
 based on Linked List Implementation from class
 */
 
+import sun.awt.image.ImageWatched;
+
 import java.util.ArrayList;
 
 class DNA {
     private int pos;
     private enum Type {DNA, RNA, EMPTY};
     private LList<Character> seq;
-    private ArrayList<String> types;
-    private ArrayList<ArrayList<?>> seqs;
+    private ArrayList<String> t;
+    private ArrayList<ArrayList<String>> seqs;
 
 
     /*
     inserts sequence and changes type at position
      */
-    public void insert(int position, String type, String sequence) {
+    public void insert(Integer position, String type, String sequence) {
         if (!valid(type, sequence)) {
             System.out.println("INVALID: This is a DNA sequence containing the base 'U'." +
                     "\n" + sequence + " was not inserted into the sequence array.");
         } else {
+
+
            for(int i=0; i<sequence.length();i++) {
                seq.append(sequence.charAt(i));
            }
+           
 
-           seqs.add(type,position);
+           seqs.add
         }
     }
 
