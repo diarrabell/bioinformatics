@@ -9,12 +9,12 @@ public class DNAList {
     public static void main(String[] args) {
         DNA test = new DNA();
 
-        test.insert(3,test.setType(0),"ACTGAATTTT");
-        test.insert(1,test.setType(2), " ");
-        test.insert(2, test.setType(1), "ACUGAAUUUU");
+        test.insert(3,"DNA","ACTGAATTTT");
+        test.insert(1,"EMPTY", " ");
+        test.insert(2, "RNA", "ACUGAAUUUU");
+//        test.insert(1,"EMPTY","REPLACED OLD SEQUENCE");
 
-
-//       LList testList = new LList();
+//        test.clip(3, 2,4);
 
 //       testList.append('A');
 //       testList.append('T');
