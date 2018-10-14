@@ -18,6 +18,7 @@ class DNA {
     private LList<Character> seq;
     private ArrayList<String> t;
     private ArrayList<ArrayList<String>> seqs;
+    private ArrayList<ArrayList<String>> seqArry;
 
 
     /*
@@ -33,9 +34,7 @@ class DNA {
            for(int i=0; i<sequence.length();i++) {
                seq.append(sequence.charAt(i));
            }
-           
 
-           seqs.add
         }
     }
 
