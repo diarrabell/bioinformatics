@@ -9,7 +9,10 @@ Harkness 114
 based on Linked List Implementation from class
 */
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 8be9b0fc84ceff48b6d9de5f5fea1162f4a33b17
 import java.util.ArrayList;
 
 class DNA {
@@ -17,7 +20,6 @@ class DNA {
     private enum Type {DNA, RNA, EMPTY};
     private LList<Character> seq;
     private ArrayList<String> t;
-    private ArrayList<ArrayList<String>> seqs;
     private ArrayList<ArrayList<String>> seqArry;
 
 
@@ -35,6 +37,8 @@ class DNA {
                seq.append(sequence.charAt(i));
            }
 
+
+           seqs
         }
     }
 
