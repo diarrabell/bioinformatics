@@ -16,7 +16,7 @@ class DNA {
     private enum Type {DNA, RNA, EMPTY};
     private LList<Character> seq;
     private ArrayList<String> types;
-    private ArrayList<?> seqs;
+    private ArrayList<ArrayList<?>> seqs;
 
 
     /*
@@ -30,8 +30,9 @@ class DNA {
            for(int i=0; i<sequence.length();i++) {
                seq.append(sequence.charAt(i));
            }
-        }
 
+           seqs.add(type,position);
+        }
     }
 
     /*

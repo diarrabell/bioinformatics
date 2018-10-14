@@ -12,11 +12,18 @@ based on LList from lectures (posted on blackboard)
 public class LList<E> {
     private class Node<E> {
         private E data; //data
+        private String type; //type
         private Node<E> next; //next node
 
         //node constructor
         public Node(E d, Node<E> n) {
             this.data = d;
+            this.next = n;
+        }
+
+        public Node(E d, String t, Node<E> n) {
+            this.data = d;
+            this.type = t;
             this.next = n;
         }
 
@@ -34,6 +41,10 @@ public class LList<E> {
 
         public void setNext(Node n) {
             this.next = n;
+        }
+        public void setNext(Node n, String t) {
+            this.next = n;
+            this.type = t;
         }
 
         public Node<E> next() {
@@ -66,6 +77,14 @@ public class LList<E> {
     //insert e at current position
     public void insert (E e) {
         curr.setNext(new Node<E>(e, curr.next()));
+        if (tail == curr) {
+            tail = curr.next();  // New tail
+        }
+        n++;
+    }
+
+    public void insert (E e, String type) {
+        curr.setNext(new Node<E>(e, type, curr.next()));
         if (tail == curr) {
             tail = curr.next();  // New tail
         }
