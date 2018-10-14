@@ -42,9 +42,8 @@ class DNA {
     removes sequence at position and sets type to empty
      */
     public void remove(int position) {
-
+        
     }
-
     /*
     prints the all sequences and indicates position in array and type(RNA or DNA)
      */
