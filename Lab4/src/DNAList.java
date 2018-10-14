@@ -1,6 +1,6 @@
 /*
-Anya Greenberg
-Partner: Diarra Bell
+Partner: Anya Greenberg
+Diarra Bell
 MW 1650-1805
 Harkness 114
  */
