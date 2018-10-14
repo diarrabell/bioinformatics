@@ -16,6 +16,8 @@ public class DNAList {
 
 //        test.clip(3, 2,4);
 
+        test.copy(2,3);
+
 //       testList.append('A');
 //       testList.append('T');
 //       testList.append('C');

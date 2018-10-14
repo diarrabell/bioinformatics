@@ -14,7 +14,6 @@ import java.util.List;
 public class LList<E> {
     private class Node<E> {
         private E data; //data
-        private String type; //type
         private Node<E> next; //next node
 
         //node constructor
@@ -23,11 +22,11 @@ public class LList<E> {
             this.next = n;
         }
 
-        public Node(E d, String t, Node<E> n) {
-            this.data = d;
-            this.type = t;
-            this.next = n;
-        }
+//        public Node(E d, String t, Node<E> n) {
+//            this.data = d;
+//            this.type = t;
+//            this.next = n;
+//        }
 
         public E getData() {
             return data;
@@ -44,10 +43,10 @@ public class LList<E> {
         public void setNext(Node n) {
             this.next = n;
         }
-        public void setNext(Node n, String t) {
-            this.next = n;
-            this.type = t;
-        }
+//        public void setNext(Node n, String t) {
+//            this.next = n;
+//            this.type = t;
+//        }
 
         public Node<E> next() {
             return next;
@@ -85,13 +84,13 @@ public class LList<E> {
         n++;
     }
 
-    public void insert (E e, String type) {
-        curr.setNext(new Node<E>(e, type, curr.next()));
-        if (tail == curr) {
-            tail = curr.next();  // New tail
-        }
-        n++;
-    }
+//    public void insert (E e, String type) {
+//        curr.setNext(new Node<E>(e, type, curr.next()));
+//        if (tail == curr) {
+//            tail = curr.next();  // New tail
+//        }
+//        n++;
+//    }
 
     //adds e to end of list
     public void append(E e) {
@@ -99,6 +98,12 @@ public class LList<E> {
         tail = tail.getNext();
         n++;
     }
+
+//    public void append(E e, String t) {
+//        tail.setNext(new Node<E>(e, t, null));
+//        tail = tail.getNext();
+//        n++;
+//    }
 
     //remove and return current element
     public E remove() {
@@ -207,20 +212,20 @@ public class LList<E> {
         return out.toString();
     }
 
-    //reports whether the list is empty
-    public boolean isEmpty() {
-        return size() == 0;
-    }
-
-    //reports if the list contains e
-    public boolean contains(Object o) {
-        Node<E> temp = head;
-        for (int i=0; curr != tail.next(); i++) {
-            if(curr.equals(o)) {
-                return true;
-            }
-            temp = temp.next();
-        }
-        return false;
-    }
+//    //reports whether the list is empty
+//    public boolean isEmpty() {
+//        return size() == 0;
+//    }
+//
+//    //reports if the list contains e
+//    public boolean contains(Object o) {
+//        Node<E> temp = head;
+//        for (int i=0; curr != tail.next(); i++) {
+//            if(curr.equals(o)) {
+//                return true;
+//            }
+//            temp = temp.next();
+//        }
+//        return false;
+//    }
 }
