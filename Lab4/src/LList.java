@@ -9,6 +9,8 @@ Harkness 114
 based on LList from lectures (posted on blackboard)
  */
 
+import java.util.List;
+
 public class LList<E> {
     private class Node<E> {
         private E data; //data
@@ -143,7 +145,7 @@ public class LList<E> {
     }
 
     //returns list length
-    public int length() {
+    public int size() {
         return n;
     }
 
@@ -180,11 +182,11 @@ public class LList<E> {
     public String toString() {
         // Save the current position of the list
         int oldPos = currPos();
-        int length = length();
-        StringBuffer out = new StringBuffer((length() + 1) * 4);
+        int length = size();
+        StringBuffer out = new StringBuffer((size() + 1) * 4);
 
         moveToStart();
-        out.append("<");
+        //out.append("<");
 
         for (int i = 0; i < oldPos; i++) {
             out.append(getValue());
@@ -192,7 +194,7 @@ public class LList<E> {
             next();
         }
 
-        out.append("| ");
+        //out.append("| ");
 
         for (int i = oldPos; i < length; i++) {
             out.append(getValue());
@@ -200,8 +202,25 @@ public class LList<E> {
             next();
         }
 
-        out.append(">");
+        //out.append(">");
         moveToPos(oldPos); // Reset the fence to its original position
         return out.toString();
+    }
+
+    //reports whether the list is empty
+    public boolean isEmpty() {
+        return size() == 0;
+    }
+
+    //reports if the list contains e
+    public boolean contains(Object o) {
+        Node<E> temp = head;
+        for (int i=0; curr != tail.next(); i++) {
+            if(curr.equals(o)) {
+                return true;
+            }
+            temp = temp.next();
+        }
+        return false;
     }
 }

@@ -9,8 +9,9 @@ public class DNAList {
     public static void main(String[] args) {
         DNA test = new DNA();
 
-        test.insert(0,test.setType(0),"qwety");
-        test.insert(1, test.setType(1), "poilkj");
+        test.insert(3,test.setType(0),"ACTGAATTTT");
+        test.insert(1,test.setType(2), " ");
+        test.insert(2, test.setType(1), "ACUGAAUUUU");
 
 
 //       LList testList = new LList();
