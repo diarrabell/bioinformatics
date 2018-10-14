@@ -15,7 +15,7 @@ class DNA {
     private int pos;
     private enum Type {DNA, RNA, EMPTY};
     private LList<Character> seq;
-    private ArrayList<String> t;
+    private ArrayList<String> t; //type
     private ArrayList<ArrayList<String>> seqArry;
 
 
@@ -34,7 +34,7 @@ class DNA {
            }
 
 
-           seqs
+
         }
     }
 
