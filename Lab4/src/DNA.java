@@ -9,7 +9,6 @@ Harkness 114
 based on Linked List Implementation from class
 */
 
-import sun.awt.image.ImageWatched;
 
 import java.util.ArrayList;
 
@@ -29,7 +28,7 @@ class DNA {
             System.out.println("INVALID: This is a DNA sequence containing the base 'U'." +
                     "\n" + sequence + " was not inserted into the sequence array.");
         } else {
-
+            
 
            for(int i=0; i<sequence.length();i++) {
                seq.append(sequence.charAt(i));
