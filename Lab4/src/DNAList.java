@@ -12,13 +12,23 @@ public class DNAList {
         test.insert(3,"DNA","TTACTGAATTTT");
         test.insert(1,"EMPTY", " ");
         test.insert(2, "RNA", "ACUGAAUUUU");
-//        test.insert(1,"EMPTY","REPLACED OLD SEQUENCE");
+        test.insert(0,"DNA","ACT");
 
-//        test.clip(3, 2,4);
+        System.out.println("INSERT");
+        test.Test();
 
-//        test.copy(2,3);
+        System.out.println("CLIP");
+        test.clip(3, 2,4);
+        test.Test();
 
+        System.out.println("COPY");
+        test.copy(2,1);
+        test.Test();
+
+        System.out.println("TRANSCRIBE");
         test.transcribe(3);
+        test.Test();
+
 
 //       testList.append('A');
 //       testList.append('T');
