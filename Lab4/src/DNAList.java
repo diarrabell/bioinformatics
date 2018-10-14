@@ -7,6 +7,12 @@ Harkness 114
 
 public class DNAList {
     public static void main(String[] args) {
+        DNA test = new DNA();
+
+        test.insert(0,test.setType(0),"qwety");
+        test.insert(1, test.setType(1), "poilkj");
+
+
 //       LList testList = new LList();
 
 //       testList.append('A');

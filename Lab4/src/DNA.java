@@ -9,30 +9,18 @@ Harkness 114
 based on Linked List Implementation from class
 */
 
-<<<<<<< HEAD
-
-=======
->>>>>>> 8be9b0fc84ceff48b6d9de5f5fea1162f4a33b17
 import java.util.ArrayList;
 
 class DNA {
     private int pos;
-    private enum Type {DNA, RNA, EMPTY};
-    private LList<Character> seq;
-    private ArrayList<String> t; //type
-    private ArrayList<ArrayList<String>> seqArry;
-
 
     /*
     inserts sequence and changes type at position
      */
-    public void insert(Integer position, String type, String sequence) {
         if (!valid(type, sequence)) {
             System.out.println("INVALID: This is a DNA sequence containing the base 'U'." +
                     "\n" + sequence + " was not inserted into the sequence array.");
         } else {
-            
-
            for(int i=0; i<sequence.length();i++) {
                seq.append(sequence.charAt(i));
            }
@@ -87,15 +75,12 @@ class DNA {
     /*
     checks whether the sequence contians the correct letters corresponding with its type
      */
-    public boolean valid(String type, String sequence) {
         switch(type) {
-            case ("DNA"):
                 if (sequence.contains("U") || sequence.contains("u")) {
                     return false;
                 }
                 break;
 
-            case ("RNA"):
                 if (sequence.contains("T") || sequence.contains("t")) {
                     return false;
                 }
