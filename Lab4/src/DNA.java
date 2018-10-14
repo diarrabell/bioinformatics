@@ -16,7 +16,7 @@ class DNA {
     private enum Type {DNA, RNA, EMPTY};
     private LList<Character> seq;
     private ArrayList<String> t;
-    private ArrayList<ArrayList<String>> seqs;
+    private ArrayList<ArrayList<String>> seqArry;
 
 
     /*
