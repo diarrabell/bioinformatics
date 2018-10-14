@@ -7,7 +7,7 @@ Harkness 114
 
 public class DNAList {
     public static void main(String[] args) {
-       LList testList = new LList();
+//       LList testList = new LList();
 
 //       testList.append('A');
 //       testList.append('T');
