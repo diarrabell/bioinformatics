@@ -6,7 +6,7 @@ public class TypePointer {
     private LList<Character> seq;//sequence
     private LList<Character> temp;
     private LList<Character> nullHolder = new LList<>();
-//    private ArrayList<LList<Character>> seqArry = new ArrayList<>(); //stores sequences
+
 
    public TypePointer(String type, String sequence) {
        setType(type);
