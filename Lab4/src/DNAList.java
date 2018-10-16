@@ -18,7 +18,7 @@ public class DNAList {
         test.Test();
 
         System.out.println("CLIP");
-        test.clip(3, 2,4);
+        test.clip(0, 2,2);
         test.Test();
 
         System.out.println("COPY");
