@@ -5,6 +5,10 @@ MW 1650-1805
 Harkness 114
  */
 
+/*
+class holds type and sequence
+ */
+
 public class TypePointer {
     public enum Types {DNA, RNA, EMPTY}
     private Types types;
@@ -31,6 +35,7 @@ public class TypePointer {
 
     /*
     checks whether the sequence contains the correct letters corresponding with its type
+    this method assumes that the only letters that could possibly be entered are A,C,G,T, and U (lower or uppercase)
      */
     public boolean valid(String type, String sequence) {
         switch(type) {

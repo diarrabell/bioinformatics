@@ -12,64 +12,39 @@ public class DNAList {
         test.insert(3,"DNA","TTACTGAATTTT");
         test.insert(1,"EMPTY", " ");
         test.insert(2, "RNA", "ACUGAAUUUU");
-        test.insert(0,"DNA","ACT");
+        test.insert(4,"RNA","AUAUAUGGCC");
+        test.insert(3,"DNA","ACTGTACC");
+        test.insert(5,"DNA","TTTATCTG");
 
-        System.out.println("INSERT");
-        test.Test();
+//        System.out.println("INSERT:");
+//        System.out.println(test.print());
 
-        System.out.println("CLIP");
-        test.clip(0, 2,2);
-        test.Test();
+//        System.out.println("PRINT INDEX:");
+//        System.out.println(test.print(0));
+//        System.out.println(test.print(1));
+//        System.out.println(test.print(2) + "\n");
 
-        System.out.println("COPY");
-        test.copy(2,1);
-        test.Test();
+//        System.out.println("CLIP:");
+//        test.clip(0, 2,2);
+//        test.clip(3, -2,2);
+//        test.clip(3, 3,100);
+//        test.clip(3, 6,1);
+//        test.clip(2, 2,7);
+//        System.out.println(test.print());
 
-        System.out.println("TRANSCRIBE");
-        test.transcribe(3);
-        test.Test();
+//        System.out.println(test.print(3));
+//        System.out.println("COPY:");
+//        test.copy(5,3);
+//        System.out.println(test.print(5));
+//        System.out.println(test.print(3));
+//        test.copy(0,4);
+//        System.out.println(test.print());
 
-
-//       testList.append('A');
-//       testList.append('T');
-//       testList.append('C');
-//       testList.append('G');
-//       System.out.println("STARAT: " + testList.toString());
-//
-//       testList.moveToPos(3);
-//       System.out.println("Moved to position 3: " + testList.toString());
-//
-//       testList.remove();
-//       System.out.println("Removed current: " + testList.toString());
-//
-//       testList.insert('A');
-//       System.out.println("inserted 'A': " + testList.toString());
-//
-//
-//       testList.moveToStart();
-//       System.out.println("Moved to start: " + testList.toString());
-//
-//       testList.next();
-//       System.out.println("Moved to next: " + testList.toString());
-//
-//       testList.moveToEnd();
-//       System.out.println("Moved to end: " + testList.toString());
-//
-//       testList.prev();
-//       System.out.println("Moved to previous: " + testList.toString());
-//
-//       System.out.println("Length:" + testList.length());
-//       System.out.println("Value of current: " + testList.getValue());
-//       System.out.println("Current Position: " + testList.currPos());
-//       System.out.println(testList.toString());
-//
-//       testList.clear();
-//
-//       testList.append('A');
-//       testList.append('U');
-//       testList.append('C');
-//       testList.append('G');
-//       System.out.println(testList.toString());
-
+//        System.out.println("TRANSCRIBE:");
+//        test.transcribe(0);
+//        test.transcribe(4);
+//        System.out.println(test.print(5));
+//        test.transcribe(5);
+//        System.out.println(test.print(5));
     }
 }

@@ -27,7 +27,7 @@ class DNA {
         //checks if sequence is valid
         if (!typePointer.valid(type, sequence)) {
             System.out.println("INVALID: This is a DNA sequence containing the base 'U'." +
-                    "\n" + sequence + " was not inserted into the sequence array.");
+                    "\n" + sequence + " was not inserted into the sequence array." + "\n");
         } else {
 
             //fill empty, skipped indexes with null if trying to insert at index higher than size-1
@@ -52,14 +52,28 @@ class DNA {
     prints the all sequences and indicates position in array and type(RNA or DNA)
      */
     public String print() {
-        return sequenceArray.toString();
+        String s = "";
+
+        for(int i=0; i<sequenceArray.size(); i++) {
+            if (sequenceArray.get(i) != null && sequenceArray.get(i).getTypeString() != "EMPTY") {
+                s = s + sequenceArray.get(i).getSeq().toString() + " - Type: " + sequenceArray.get(i).getTypeString() + "; Position: " + i + "\n";
+            }
+        }
+
+        return s;
     }
 
     /*
     prints the sequence and type at position
      */
-    public int print(int position) {
-        return pos;
+    public String print(int position) {
+        String s = "";
+        if (sequenceArray.get(position) != null && sequenceArray.get(position).getTypeString() != "EMPTY") {
+            s = sequenceArray.get(position).getSeq() + " - Type: " + sequenceArray.get(position).getTypeString() + "; Position: " + position;
+        } else {
+            s = "Sorry. There is no sequence at " + position + ".";
+        }
+        return s;
     }
 
     /*
@@ -70,11 +84,11 @@ class DNA {
 
         //checks if sequence at index is null
         if(sequenceArray.get(position) == null) {
-            System.out.println("There is no sequence at " + position + "." +  "\n" + "No change was made.");
+            System.out.println("There is no sequence at " + position + "." +  "\n" + "No change was made." + "\n");
 
             // checks if the sequence requested is within the bounds specified
         } else if (start < 0 || start > sequenceArray.get(position).getSeq().size() || end > sequenceArray.get(position).getSeq().size()) {
-            System.out.println("That is an invalid input." + "\n" + "No change was made.");
+            System.out.println("That is an invalid input." + "\n" + "No change was made." + "\n");
 
             // if
         } else if (start > end) {
@@ -96,7 +110,7 @@ class DNA {
      */
     public void copy (int pos1, int pos2) {
         if(sequenceArray.get(pos1) == null) {
-            System.out.println("There is no sequence at " + pos1 + "." +  "\n" + "No change was made.");
+            System.out.println("There is no sequence at " + pos1 + "." +  "\n" + "No change was made." + "\n");
         } else {
             sequenceArray.set(pos2, sequenceArray.get(pos1));
         }
@@ -110,10 +124,12 @@ class DNA {
 
         //can't transcribe if null, empty, or RNA
         if (sequenceArray.get(position) == null) {
-            System.out.println("There is no sequence at " + position + "." +  "\n" + "No change was made.");
+            System.out.println("There is no sequence at " + position + "." +  "\n" + "No change was made." + "\n");
         } else if(sequenceArray.get(position).getType() == TypePointer.Types.DNA) {
             //goes through sequence and changes t to u
-            for (int i = sequenceArray.get(position).getSeq().size()-1; i>=0; i--) {
+            sequenceArray.get(position).getSeq().moveToEnd();
+            sequenceArray.get(position).getSeq().prev();
+            for (int i = 0; i<sequenceArray.get(position).getSeq().size(); i++) {
                 if(sequenceArray.get(position).getSeq().getValue() == 'T' || sequenceArray.get(position).getSeq().getValue() == 't') {
                     tempSeq.append('A');
                 } else if(sequenceArray.get(position).getSeq().getValue() == 'A' || sequenceArray.get(position).getSeq().getValue() == 'a') {
@@ -123,64 +139,13 @@ class DNA {
                 } else if(sequenceArray.get(position).getSeq().getValue() == 'C' || sequenceArray.get(position).getSeq().getValue() == 'C') {
                     tempSeq.append('G');
                 }
-                sequenceArray.get(position).getSeq().next();
+                sequenceArray.get(position).getSeq().prev();
             }
-
-            System.out.println(tempSeq);
 
             sequenceArray.get(position).setType("RNA");
             sequenceArray.get(position).setSeq(tempSeq);
         } else {
-            System.out.println("Cannot perform transcription on this type." + "\n" + "No change was made.");
+            System.out.println("Cannot perform transcription on this type." + "\n" + "No change was made." + "\n");
         }
-    }
-
-
-
-    public void Test() {
-
-        System.out.print("Types: ");
-        for (int i=0; i<sequenceArray.size(); i++){
-            if(i==0) {
-                System.out.print("{");
-            }
-
-            if (sequenceArray.get(i).getTypeString() != null) {
-                System.out.print(sequenceArray.get(i).getTypeString());
-            }
-
-            if(i!=sequenceArray.size()-1) {
-                System.out.print(", ");
-            }
-
-            if(i==sequenceArray.size()-1) {
-                System.out.print("}");
-            }
-        }
-
-        System.out.println();
-
-        System.out.print("Sequences: ");
-        for (int i=0; i<sequenceArray.size(); i++) {
-            if(i==0) {
-                System.out.print("{");
-            }
-
-            if (sequenceArray.get(i).getSeq().toString() != null) {
-                System.out.print(sequenceArray.get(i).getSeq().toString());
-            }
-
-            if(i!=sequenceArray.size()-1) {
-                System.out.print(", ");
-            }
-
-            if(i==sequenceArray.size()-1) {
-                System.out.print("}");
-            }
-        }
-
-        System.out.println();
-
-        System.out.println();
     }
 }
