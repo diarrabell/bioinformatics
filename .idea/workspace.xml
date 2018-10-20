@@ -47,8 +47,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Lab4/src/DNAList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1021">
-              <caret line="50" column="9" lean-forward="true" selection-start-line="50" selection-start-column="9" selection-end-line="50" selection-end-column="9" />
+            <state relative-caret-position="-637">
+              <caret line="11" column="29" lean-forward="true" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -56,15 +56,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Lab4/src/DNA.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
-              <caret line="46" selection-start-line="46" selection-end-line="46" />
+            <state relative-caret-position="804">
+              <caret line="48" selection-start-line="48" selection-end-line="48" />
               <folding>
-                <element signature="method#insert#0;class#DNA#0" />
-                <element signature="method#remove#0;class#DNA#0" />
-                <element signature="method#print#0;class#DNA#0" />
-                <element signature="method#print#1;class#DNA#0" />
-                <element signature="method#clip#0;class#DNA#0" />
-                <element signature="method#copy#0;class#DNA#0" />
+                <element signature="e#301#302#0" expanded="true" />
+                <element signature="e#351#352#0" expanded="true" />
                 <element signature="method#transcribe#0;class#DNA#0" />
               </folding>
             </state>
@@ -143,7 +139,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540078019115" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540079493186" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -181,15 +177,15 @@
       <updated>1539483758956</updated>
       <workItem from="1539483763422" duration="3066000" />
       <workItem from="1540070929722" duration="280000" />
-      <workItem from="1540071253104" duration="5799000" />
+      <workItem from="1540071253104" duration="7011000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9145000" />
+    <option name="totallyTimeSpent" value="10357000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-5" y="0" width="651" height="685" extended-state="0" />
+    <frame x="-6" y="-6" width="1292" height="692" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.24915825" />
@@ -203,7 +199,7 @@
       <window_info anchor="bottom" id="Messages" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.33093524" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3268206" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -237,15 +233,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Lab4/src/DNA.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="46" selection-start-line="46" selection-end-line="46" />
+        <state relative-caret-position="804">
+          <caret line="48" selection-start-line="48" selection-end-line="48" />
           <folding>
-            <element signature="method#insert#0;class#DNA#0" />
-            <element signature="method#remove#0;class#DNA#0" />
-            <element signature="method#print#0;class#DNA#0" />
-            <element signature="method#print#1;class#DNA#0" />
-            <element signature="method#clip#0;class#DNA#0" />
-            <element signature="method#copy#0;class#DNA#0" />
+            <element signature="e#301#302#0" expanded="true" />
+            <element signature="e#351#352#0" expanded="true" />
             <element signature="method#transcribe#0;class#DNA#0" />
           </folding>
         </state>
@@ -253,8 +245,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Lab4/src/DNAList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1021">
-          <caret line="50" column="9" lean-forward="true" selection-start-line="50" selection-start-column="9" selection-end-line="50" selection-end-column="9" />
+        <state relative-caret-position="-637">
+          <caret line="11" column="29" lean-forward="true" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
         </state>
       </provider>
     </entry>
