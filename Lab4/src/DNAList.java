@@ -16,13 +16,15 @@ public class DNAList {
             String line;
             while ((line = br.readLine()) !=null){
                 String [] lineArr = line.split("");
-              switch(lineArr[0]){
+                switch(lineArr[0]){
                   case "print":
                       if (lineArr.length > 1){
-                          test.print(Integer.parseInt(lineArr[1]));
+                          String print = test.print(Integer.parseInt(lineArr[1]));
+                          System.out.println(print);
                       }
                       else{
-                          test.print();
+                          String print = test.print();
+                          System.out.println(print);
                       }
                       break;
                   case "remove":
