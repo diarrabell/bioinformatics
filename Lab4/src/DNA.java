@@ -12,7 +12,6 @@ class has methods to modify and observe the sequence array of sequences
 import java.util.ArrayList;
 
 class DNA {
-    private int pos;
     private TypePointer typePointer;
     private LList<Character> tempSeq;
     private ArrayList<TypePointer> sequenceArray = new ArrayList<>();
@@ -46,7 +45,10 @@ class DNA {
     removes sequence at position and sets type to empty
      */
     public void remove(int position) {
-
+        String s = "";
+        sequenceArray.get(position).setType("EMPTY");
+        sequenceArray.get(position).setSeq(null);
+        System.out.println("The sequence at position " + position + " was removed.");
     }
     /*
     prints the all sequences and indicates position in array and type(RNA or DNA)
@@ -59,10 +61,8 @@ class DNA {
                 s = s + sequenceArray.get(i).getSeq().toString() + " - Type: " + sequenceArray.get(i).getTypeString() + "; Position: " + i + "\n";
             }
         }
-
         return s;
     }
-
     /*
     prints the sequence and type at position
      */
@@ -141,7 +141,6 @@ class DNA {
                 }
                 sequenceArray.get(position).getSeq().prev();
             }
-
             sequenceArray.get(position).setType("RNA");
             sequenceArray.get(position).setSeq(tempSeq);
         } else {
