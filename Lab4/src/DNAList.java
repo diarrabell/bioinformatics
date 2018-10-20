@@ -9,9 +9,10 @@ import java.io.*;
 
 public class DNAList {
     public static void main(String[] args) {
-        DNA test = new DNA();
-        File file = new File(args[1]);
-        try(BufferedReader br = new BufferedReader(new FileReader(file))){
+        int n = Integer.parseInt(args[0]);
+        DNA test = new DNA(n);
+        File input = new File(args[1]);
+        try(BufferedReader br = new BufferedReader(new FileReader(input))){
             String line;
             while ((line = br.readLine()) !=null){
                 String [] lineArr = line.split("");
