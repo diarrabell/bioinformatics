@@ -3,14 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="f3debf2c-317b-4323-91ef-3d918d3a1edb" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Lab4/DNA.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lab4/DNA.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Lab4/DNAList.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lab4/DNAList.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Lab4/TypePointer$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lab4/TypePointer$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Lab4/TypePointer$Types.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lab4/TypePointer$Types.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Lab4/TypePointer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lab4/TypePointer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DNA.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DNA.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/DNAList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DNAList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TypePointer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TypePointer.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -53,21 +46,23 @@
     <session id="1357876870">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
+          <entry key="project.closed" value="4" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.10" value="1" />
-          <entry key="project.opened" value="2" />
+          <entry key="project.open.time.12" value="1" />
+          <entry key="project.open.time.2" value="1" />
+          <entry key="project.opened" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="16" />
-          <entry key="java" value="10065" />
+          <entry key="java" value="10095" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="10065" />
+          <entry key="JAVA" value="10095" />
           <entry key="PLAIN_TEXT" value="16" />
         </counts>
       </usages-collector>
@@ -88,11 +83,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/DNAList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="630">
-              <caret line="47" column="25" lean-forward="true" selection-start-line="42" selection-start-column="11" selection-end-line="47" selection-end-column="25" />
-              <folding>
-                <marker date="1540069523301" expanded="true" signature="507:695" ph="..." />
-              </folding>
+            <state relative-caret-position="392">
+              <caret line="49" column="9" selection-start-line="49" selection-start-column="9" selection-end-line="49" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -100,17 +92,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/DNA.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="400">
-              <caret line="144" column="55" lean-forward="true" selection-start-line="144" selection-start-column="55" selection-end-line="144" selection-end-column="55" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/src.zip!/java/util/ArrayList.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="652" selection-start-line="652" selection-end-line="652" />
+            <state relative-caret-position="135">
+              <caret line="18" column="6" lean-forward="true" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -118,17 +101,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/TypePointer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
+            <state relative-caret-position="420">
               <caret line="37" column="116" selection-start-line="37" selection-start-column="116" selection-end-line="37" selection-end-column="116" />
-              <folding>
-                <element signature="e#0#2207#0" expanded="true" />
-                <element signature="e#1272#1273#0" expanded="true" />
-                <element signature="e#1305#1306#0" expanded="true" />
-                <element signature="e#2085#2086#0" expanded="true" />
-                <element signature="e#2116#2117#0" expanded="true" />
-                <element signature="e#2164#2165#0" expanded="true" />
-                <element signature="e#2194#2195#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -136,7 +110,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/LList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
+            <state relative-caret-position="2715">
               <caret line="190" column="62" selection-start-line="190" selection-start-column="7" selection-end-line="190" selection-end-column="62" />
               <folding>
                 <element signature="e#444#445#0" expanded="true" />
@@ -195,8 +169,9 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
+    <option name="x" value="151" />
     <option name="y" value="22" />
-    <option name="width" value="1011" />
+    <option name="width" value="1680" />
     <option name="height" value="988" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -236,7 +211,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540070938733" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540075300566" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
@@ -258,6 +233,7 @@
     <configuration name="DNAList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="DNAList" />
       <module name="Lab4" />
+      <option name="PROGRAM_PARAMETERS" value="5 INPUT.txt" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -282,7 +258,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1011" height="988" extended-state="0" />
+    <frame x="151" y="22" width="1680" height="988" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.2002064" />
@@ -376,9 +352,23 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/SequenceArray.java" />
     <entry file="file://$PROJECT_DIR$/src/TypeSequence.java" />
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/src.zip!/java/util/ArrayList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2175">
+          <caret line="652" selection-start-line="652" selection-end-line="652" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TypePointer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="37" column="116" selection-start-line="37" selection-start-column="116" selection-end-line="37" selection-end-column="116" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/LList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
+        <state relative-caret-position="2715">
           <caret line="190" column="62" selection-start-line="190" selection-start-column="7" selection-end-line="190" selection-end-column="62" />
           <folding>
             <element signature="e#444#445#0" expanded="true" />
@@ -401,43 +391,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/TypePointer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="37" column="116" selection-start-line="37" selection-start-column="116" selection-end-line="37" selection-end-column="116" />
-          <folding>
-            <element signature="e#0#2207#0" expanded="true" />
-            <element signature="e#1272#1273#0" expanded="true" />
-            <element signature="e#1305#1306#0" expanded="true" />
-            <element signature="e#2085#2086#0" expanded="true" />
-            <element signature="e#2116#2117#0" expanded="true" />
-            <element signature="e#2164#2165#0" expanded="true" />
-            <element signature="e#2194#2195#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/src.zip!/java/util/ArrayList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="652" selection-start-line="652" selection-end-line="652" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/DNA.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="144" column="55" lean-forward="true" selection-start-line="144" selection-start-column="55" selection-end-line="144" selection-end-column="55" />
+        <state relative-caret-position="135">
+          <caret line="18" column="6" lean-forward="true" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/DNAList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="47" column="25" lean-forward="true" selection-start-line="42" selection-start-column="11" selection-end-line="47" selection-end-column="25" />
-          <folding>
-            <marker date="1540069523301" expanded="true" signature="507:695" ph="..." />
-          </folding>
+        <state relative-caret-position="392">
+          <caret line="49" column="9" selection-start-line="49" selection-start-column="9" selection-end-line="49" selection-end-column="9" />
         </state>
       </provider>
     </entry>
