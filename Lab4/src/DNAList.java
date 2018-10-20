@@ -10,7 +10,7 @@ import java.io.*;
 public class DNAList {
     public static void main(String[] args) {
         DNA test = new DNA();
-        File file = new File (args[1]);
+        File file = new File(args[1]);
         try(BufferedReader br = new BufferedReader(new FileReader(file))){
             String line;
             while ((line = br.readLine()) !=null){
