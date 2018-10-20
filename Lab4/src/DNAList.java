@@ -23,10 +23,6 @@ public class DNAList {
             String line;
             int j = 0;
             while ((line = br.readLine()) != null) {
-                if (line.length() > 0) {
-                    String[] lineArr = line.split("");
-                    switch (lineArr[0]) {
-                        case "print":
                     String[] lineArr = line.split(" ");
 
                     // ignores extraneous spaces
@@ -47,23 +43,18 @@ public class DNAList {
                                 System.out.println(print);
                             }
                             break;
-                        case "remove":
                         case ("remove"):
                             test.remove(Integer.parseInt(lineArr[1]));
                             break;
-                        case "insert":
                         case ("insert"):
                             test.insert(Integer.parseInt(lineArr[1]), lineArr[2], lineArr[3]);
                             break;
-                        case "copy":
                         case ("copy"):
                             test.copy(Integer.parseInt(lineArr[1]), Integer.parseInt(lineArr[2]));
                             break;
-                        case "transcribe":
                         case ("transcribe"):
                             test.transcribe(Integer.parseInt(lineArr[1]));
                             break;
-                        case "clip":
                         case ("clip"):
                             test.clip(Integer.parseInt(lineArr[1]), Integer.parseInt(lineArr[2]), Integer.parseInt(lineArr[3]));
                             break;
@@ -71,9 +62,6 @@ public class DNAList {
                             break;
                     }
                 }
-            }
-        } catch (IOException e) {
-            e.printStackTrace();
             } catch (IOException e) {
                 e.printStackTrace();
         }
