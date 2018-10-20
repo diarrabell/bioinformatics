@@ -1,6 +1,6 @@
 /*
-Partner: Anya Greenberg
-Diarra Bell
+Anya Greenberg
+Partner: Diarra Bell
 MW 1650-1805
 Harkness 114
  */
@@ -18,7 +18,7 @@ public class DNAList {
         test.Test();
 
         System.out.println("CLIP");
-        test.clip(3, 2,4);
+        test.clip(0, 2,2);
         test.Test();
 
         System.out.println("COPY");
