@@ -35,7 +35,7 @@ public class TypePointer {
 
     /*
     checks whether the sequence contains the correct letters corresponding with its type
-    this method assumes that the only letters that could possibly be entered are A,C,G,T, and U (lower or uppercase)
+    this method assumes that the only letters that could possibly be entered are A,C,G,T, and U (uppercase)
      */
     public boolean valid(String type, String sequence) {
         switch(type) {
