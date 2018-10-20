@@ -10,20 +10,16 @@ based on LList from lectures (posted on blackboard)
  */
 
 public class LList<E> {
+    /*
+    node class
+     */
     private class Node<E> {
         private E data; //data
-        private String type; //type
         private Node<E> next; //next node
 
-        //node constructor
+        // node constructor
         public Node(E d, Node<E> n) {
             this.data = d;
-            this.next = n;
-        }
-
-        public Node(E d, String t, Node<E> n) {
-            this.data = d;
-            this.type = t;
             this.next = n;
         }
 
@@ -35,16 +31,8 @@ public class LList<E> {
             this.data = d;
         }
 
-        public Node getNext() {
-            return next;
-        }
-
         public void setNext(Node n) {
             this.next = n;
-        }
-        public void setNext(Node n, String t) {
-            this.next = n;
-            this.type = t;
         }
 
         public Node<E> next() {
@@ -57,25 +45,30 @@ public class LList<E> {
     private Node<E> curr;
     private int n;
 
-    //constructors
+    // constructor
     public LList() {
-        curr=tail=head=new Node<E>(null,null);
+        curr = tail = head = new Node<E>(null, null);
         n = 0;
     }
 
+    // not used in this code
     public LList(int size) {
         this();
     }
 
-    // removes all elements
+    /*
+    removes all elements
+     */
     public void clear() {
         head.setNext(null); // Drop access to links
         curr = tail = head = new Node<E>(null, null); // Create header
         n = 0;
     }
 
-    //insert e at current position
-    public void insert (E e) {
+    /*
+    insert e at current position
+     */
+    public void insert(E e) {
         curr.setNext(new Node<E>(e, curr.next()));
         if (tail == curr) {
             tail = curr.next();  // New tail
@@ -83,22 +76,18 @@ public class LList<E> {
         n++;
     }
 
-    public void insert (E e, String type) {
-        curr.setNext(new Node<E>(e, type, curr.next()));
-        if (tail == curr) {
-            tail = curr.next();  // New tail
-        }
-        n++;
-    }
-
-    //adds e to end of list
+    /*
+    adds e to end of list
+     */
     public void append(E e) {
         tail.setNext(new Node<E>(e, null));
-        tail = tail.getNext();
+        tail = tail.next();
         n++;
     }
 
-    //remove and return current element
+    /*
+    emove and return current element
+     */
     public E remove() {
         if (curr.next() == null) {
             return null; // Nothing to remove
@@ -112,79 +101,97 @@ public class LList<E> {
         return e; // Return value
     }
 
-    //set curr at list start
+    /*
+    set curr at list start
+     */
     public void moveToStart() {
         curr = head;
     }
 
-    //set curr at list end
+    /*
+    set curr at list end
+     */
     public void moveToEnd() {
         curr = tail;
     }
 
-    //move curr one step left, no change if at front
+    /*
+    move curr one step left, no change if at front
+     */
     public void prev() {
         if (curr == head) {
-            return; // No previous element
+            return; // no previous element
         }
         Node<E> temp = head;
-        // March down list until we find the previous element
+        // march down list until we find the previous element
         while (temp.next() != curr) {
             temp = temp.next();
         }
         curr = temp;
     }
 
-    //move curr one step right, no change if at end
+    /*
+    move curr one step right, no change if at end
+     */
     public void next() {
         if (curr != tail) {
             curr = curr.next();
         }
     }
 
-    //returns list length
-    public int length() {
+    /*
+    returns list length
+     */
+    public int size() {
         return n;
     }
 
-    //returns position of current element
+    /*
+    returns position of current element
+     */
     public int currPos() {
         Node<E> temp = head;
         int i;
-        for (i=0; curr != temp; i++) {
+        for (i = 0; curr != temp; i++) {
             temp = temp.next();
         }
         return i;
     }
 
-    //move down list to position
+    /*
+    move down list to position
+     */
     public void moveToPos(int position) {
-        if (position<0 && position>=n) {
+        if (position < 0 && position >= n) {
             System.out.println("Position out of range");
         }
         curr = head;
-        for(int i=0; i<position; i++) {
+        for (int i = 0; i < position; i++) {
             curr = curr.next();
         }
     }
 
-    //current element's value
+    /*
+    current element's value
+     */
     public E getValue() {
-        if(curr.next() == null) {
+        if (curr.next() == null) {
             return null;
         }
         return curr.next().getData();
     }
 
-    //generates readable representation of list's contents
+    /*
+    generates readable representation of list's contents
+     */
     public String toString() {
         // Save the current position of the list
         int oldPos = currPos();
-        int length = length();
-        StringBuffer out = new StringBuffer((length() + 1) * 4);
+        int length = size();
+        StringBuffer out = new StringBuffer((size() + 1) * 4);
 
         moveToStart();
-        out.append("<");
+//        out.append("<");
 
         for (int i = 0; i < oldPos; i++) {
             out.append(getValue());
@@ -192,7 +199,7 @@ public class LList<E> {
             next();
         }
 
-        out.append("| ");
+//        out.append("| ");
 
         for (int i = oldPos; i < length; i++) {
             out.append(getValue());
@@ -200,8 +207,10 @@ public class LList<E> {
             next();
         }
 
-        out.append(">");
-        moveToPos(oldPos); // Reset the fence to its original position
+//        out.append(">");
+        // Reset the fence to its original position
+        moveToPos(oldPos);
         return out.toString();
     }
+
 }
