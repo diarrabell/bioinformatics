@@ -9,11 +9,17 @@ import java.io.*;
 
 public class DNAList {
     public static void main(String[] args) {
+<<<<<<< HEAD
+        DNA test = new DNA();
+        File file = new File(args[1]);
+        try (BufferedReader br = new BufferedReader(new FileReader(file))) {
+=======
         int n = Integer.parseInt(args[0]);
         DNA test = new DNA(n);
         File input = new File(args[1]);
 
         try(BufferedReader br = new BufferedReader(new FileReader(input))){
+>>>>>>> 5f02ca15ecdaf4bc709f36e0ccee3ff03add3a3c
             String line;
             int j = 0;
             while ((line = br.readLine()) != null) {
