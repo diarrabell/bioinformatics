@@ -46,14 +46,12 @@ public class LList<E> {
     private Node<E> curr;
     private int n;
 
-    // constructor
     // constructors
     public LList() {
         curr = tail = head = new Node<E>(null, null);
         n = 0;
     }
 
-    // not used in this code
     public LList(int size) {
         this();
     }
@@ -88,7 +86,6 @@ public class LList<E> {
     }
 
     /*
-    emove and return current element
     remove and return current element
      */
     public E remove() {
