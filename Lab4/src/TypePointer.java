@@ -33,6 +33,7 @@ public class TypePointer {
         this.seq = temp;
     }
 
+    //constructor with sequence already a LList
     public TypePointer(String type, LList<Character> sequence) {
         setType(type);
         this.seq = sequence;
@@ -59,11 +60,11 @@ public class TypePointer {
         return true;
     }
 
+    // getters and setters
     public Types getType() {
         return this.types;
     }
 
-    // getters and setters
     public String getTypeString() {
         switch(this.types) {
             case DNA:
