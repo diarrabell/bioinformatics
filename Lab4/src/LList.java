@@ -23,7 +23,6 @@ public class LList<E> {
             this.next = n;
         }
 
-        // node getters and setters
         public E getData() {
             return data;
         }
@@ -47,7 +46,6 @@ public class LList<E> {
     private int n;
 
     // constructor
-    // constructors
     public LList() {
         curr = tail = head = new Node<E>(null, null);
         n = 0;
@@ -89,7 +87,6 @@ public class LList<E> {
 
     /*
     emove and return current element
-    remove and return current element
      */
     public E remove() {
         if (curr.next() == null) {
