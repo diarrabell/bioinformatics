@@ -33,6 +33,12 @@ public class TypePointer {
         this.seq = temp;
     }
 
+    //constructor with sequence already a LList
+    public TypePointer(String type, LList<Character> sequence) {
+        setType(type);
+        this.seq = sequence;
+    }
+
     /*
     checks whether the sequence contains the correct letters corresponding with its type
     this method assumes that the only letters that could possibly be entered are A,C,G,T, and U (uppercase)
@@ -54,11 +60,11 @@ public class TypePointer {
         return true;
     }
 
+    // getters and setters
     public Types getType() {
         return this.types;
     }
 
-    // getters and setters
     public String getTypeString() {
         switch(this.types) {
             case DNA:
