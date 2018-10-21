@@ -10,6 +10,9 @@ class holds type and sequence
  */
 
 public class TypePointer {
+    public TypePointer(String typeString, LList<Character> seq) {
+    }
+
     public enum Types {DNA, RNA, EMPTY}
     private Types types;
     private LList<Character> seq;//sequence
