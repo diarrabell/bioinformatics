@@ -25,6 +25,7 @@ class DNA {
     public void insert(int position, String type, String sequence) {
         // sets type and sequence of new item
         typePointer = new TypePointer(type, sequence);
+        System.out.println("INSERT");
 
         //checks if sequence is valid
         if (!typePointer.valid(type, sequence)) {
@@ -49,34 +50,37 @@ class DNA {
      */
     public void remove(int position) {
         String s = "";
+        System.out.println("REMOVE");
         sequenceArray[position].setType("EMPTY");
         sequenceArray[position].setSeq(null);
-        System.out.println("The sequence at position " + position + " was removed.");
+        System.out.println("The sequence at position " + position + " was removed." + "\n");
     }
     /*
     prints the all sequences and indicates position in array and type(RNA or DNA)
      */
     public void print() {
         String s = "";
+        System.out.println("PRINT");
 
         for(int i=0; i<sequenceArray.length; i++) {
             if (sequenceArray[i] != null && sequenceArray[i].getTypeString() != "EMPTY") {
                 s = s + sequenceArray[i].getSeq().toString() + " - Type: " + sequenceArray[i].getTypeString() + "; Position: " + i + "\n";
             }
         }
-        System.out.println(s);
+        System.out.print(s + "\n");
     }
     /*
     prints the sequence and type at position
      */
     public void print(int position) {
         String s = "";
+        System.out.println("PRINT");
         if (sequenceArray[position] != null && sequenceArray[position].getTypeString() != "EMPTY") {
             s = sequenceArray[position].getSeq() + " - Type: " + sequenceArray[position].getTypeString() + "; Position: " + position;
         } else {
             s = "Sorry. There is no sequence at " + position + ".";
         }
-        System.out.println(s);
+        System.out.print(s + "\n");
     }
 
     /*
@@ -84,6 +88,7 @@ class DNA {
      */
     public void clip (int position, int start, int end) {
         tempSeq = new LList<>();
+        System.out.println("CLIP");
 
         //checks if sequence at index is null
         if(sequenceArray[position] == null) {
@@ -110,6 +115,7 @@ class DNA {
     copies sequence at pos1 to pos2
      */
     public void copy (int pos1, int pos2) {
+        System.out.println("COPY");
         if(sequenceArray[pos1] == null) {
             System.out.println("There is no sequence at " + pos1 + "." +  "\n" + "No change was made." + "\n");
         } else {
@@ -123,6 +129,7 @@ class DNA {
      */
     public void transcribe (int position) {
         tempSeq = new LList<>();
+        System.out.println("TRANSCRIBE");
 
         //can't transcribe if null, empty, or RNA
         if (sequenceArray[position] == null) {
