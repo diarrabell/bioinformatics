@@ -29,27 +29,31 @@ public class DNAList {
 
                     switch (lineArr[j]) {
                         case ("print"):
+                            System.out.println("PRINTED");
                             if (lineArr.length > 1) {
-                                String print = test.print(Integer.parseInt(lineArr[1]));
-                                System.out.println(print);
+                                test.print(Integer.parseInt(lineArr[1]));
                             } else {
-                                String print = test.print();
-                                System.out.println(print);
+                                test.print();
                             }
                             break;
                         case ("remove"):
+                            System.out.println("REMOVED");
                             test.remove(Integer.parseInt(lineArr[1]));
                             break;
                         case ("insert"):
+                            System.out.println("INSERTED");
                             test.insert(Integer.parseInt(lineArr[1]), lineArr[2], lineArr[3]);
                             break;
                         case ("copy"):
+                            System.out.println("COPIED");
                             test.copy(Integer.parseInt(lineArr[1]), Integer.parseInt(lineArr[2]));
                             break;
                         case ("transcribe"):
+                            System.out.println("TRANSCRIBED");
                             test.transcribe(Integer.parseInt(lineArr[1]));
                             break;
                         case ("clip"):
+                            System.out.println("CLIPPED");
                             test.clip(Integer.parseInt(lineArr[1]), Integer.parseInt(lineArr[2]), Integer.parseInt(lineArr[3]));
                             break;
                         default:

@@ -13,6 +13,7 @@ class DNA {
     private TypePointer typePointer;
     private LList<Character> tempSeq;
     private TypePointer[] sequenceArray;
+    private TypePointer tempPointer;
 
     public DNA (int n) {
         sequenceArray = new TypePointer[n];
@@ -55,7 +56,7 @@ class DNA {
     /*
     prints the all sequences and indicates position in array and type(RNA or DNA)
      */
-    public String print() {
+    public void print() {
         String s = "";
 
         for(int i=0; i<sequenceArray.length; i++) {
@@ -63,19 +64,19 @@ class DNA {
                 s = s + sequenceArray[i].getSeq().toString() + " - Type: " + sequenceArray[i].getTypeString() + "; Position: " + i + "\n";
             }
         }
-        return s;
+        System.out.println(s);
     }
     /*
     prints the sequence and type at position
      */
-    public String print(int position) {
+    public void print(int position) {
         String s = "";
         if (sequenceArray[position] != null && sequenceArray[position].getTypeString() != "EMPTY") {
             s = sequenceArray[position].getSeq() + " - Type: " + sequenceArray[position].getTypeString() + "; Position: " + position;
         } else {
             s = "Sorry. There is no sequence at " + position + ".";
         }
-        return s;
+        System.out.println(s);
     }
 
     /*
@@ -94,7 +95,6 @@ class DNA {
 
             // if
         } else if (start > end) {
-//            seqArry.set(position,tempSeq);
             sequenceArray[position].setSeq(tempSeq);
         } else {
             for (int i = start; i <= end; i++) {
@@ -102,7 +102,6 @@ class DNA {
                 tempSeq.append(sequenceArray[position].getSeq().getValue());
             }
 
-//            seqArry.set(position,tempSeq);
             sequenceArray[position].setSeq(tempSeq);
         }
     }
@@ -114,7 +113,8 @@ class DNA {
         if(sequenceArray[pos1] == null) {
             System.out.println("There is no sequence at " + pos1 + "." +  "\n" + "No change was made." + "\n");
         } else {
-            sequenceArray[pos2] = sequenceArray[pos1];
+            tempPointer = new TypePointer(sequenceArray[pos1].getTypeString(), sequenceArray[pos1].getSeq());
+            sequenceArray[pos2] = tempPointer;
         }
     }
 
